@@ -1,0 +1,46 @@
+@import "_head";
+@import "_basics";
+
+.header {
+  padding: 2rem 9%;
+  top: 0;
+  left: 0;
+  right: 0;
+  @include d-flex(space-between);
+}
+#menu-btn {
+  display: none;
+  font-size: 3rem;
+  cursor: pointer;
+  color: $black;
+  &:hover {
+    color: $grey;
+  }
+}
+.navbar {
+  @include d-flex;
+  gap: 3rem;
+  a {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: $main-color;
+    cursor: pointer;
+    &:hover {
+      font-size: 2.5rem;
+      color: $grey;
+    }
+  }
+}
+.btn {
+  color: $black;
+  background: $white;
+  border: 1px solid $main-color;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  padding: 0.9rem 3rem;
+  &:hover {
+    color: $white;
+    background: $black;
+  }
+}
